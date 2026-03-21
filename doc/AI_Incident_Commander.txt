@@ -1,0 +1,56 @@
+AI Incident Commander - Full Explanation
+
+1.  Overview This project is a multi-agent AI system that simulates an
+    autonomous SRE (Site Reliability Engineering) team. It detects
+    incidents, analyzes root causes, makes decisions, and responds
+    automatically.
+
+2.  Architecture The system consists of multiple agents:
+
+-   Alert Agent: Parses incoming alerts
+-   Analysis Agent: Uses AI to find root cause
+-   Decision Agent: Decides actions
+-   Response Agent: Generates output and logs
+-   Memory Agent: Detects repeated incidents
+
+3.  Flow User Input -> Alert Agent -> Analysis Agent -> Memory Agent ->
+    Decision Agent -> Response Agent
+
+4.  Features
+
+-   Multi-agent AI architecture
+-   Root cause analysis using LLM
+-   Automated decision making
+-   Escalation on repeated issues
+-   Logging (TXT + JSON)
+-   Continuous monitoring mode
+
+5.  How to Run python3 main.py
+
+6.  Example Input High CPU usage detected. Database connection timeout
+    errors observed.
+
+7.  Output
+
+-   Severity
+-   Root cause
+-   Recommended action
+-   Suggested command
+
+8.  Logging Logs are saved in: logs/incidents.txt logs/incidents.json
+
+9.  Advanced Features
+
+-   Memory-based escalation
+-   Incident ID tracking
+-   Structured logging
+-   CLI-friendly execution
+
+10. Use Cases
+
+-   DevOps monitoring
+-   Kubernetes incident response
+-   AI-driven SRE automation
+
+This project demonstrates a real-world AI system beyond simple chatbots.
+
