@@ -1,0 +1,65 @@
+
+Enter alert (or type 'exit'): 
+🚀 AI Incident Commander Started
+
+
+[Alert Agent] Processing input...
+
+[Analysis Agent] Finding root cause...
+[Analysis Parsed] {'root_cause': 'High CPU usage likely caused by increased query loads or inefficient database queries leading to timeouts.', 'severity': 'HIGH', 'explanation': 'High CPU usage can significantly impact database performance, causing timeouts and slow query responses. Immediate investigation is necessary to identify problematic queries or resource contention.'}
+
+[Memory Agent] Checking history...
+
+[Decision Agent] Deciding action...
+[Decision Parsed] {'action_required': 'YES', 'recommended_action': 'Investigate and optimize database queries, and monitor current CPU load to identify resource contention.', 'priority': 'HIGH', 'command': 'kubectl top pods --all-namespaces'}
+
+[Response Agent] Taking action...
+
+===== 🚀 AI INCIDENT COMMANDER REPORT =====
+
+🔥 Severity       : HIGH
+🧠 Root Cause    : High CPU usage likely caused by increased query loads or inefficient database queries leading to timeouts.
+📖 Explanation   : High CPU usage can significantly impact database performance, causing timeouts and slow query responses. Immediate investigation is necessary to identify problematic queries or resource contention.
+
+⚡ Action Needed : YES
+🛠️ Recommendation: Investigate and optimize database queries, and monitor current CPU load to identify resource contention.
+🚨 Priority      : HIGH
+
+💻 Suggested Command:
+kubectl top pods --all-namespaces
+
+📝 Log saved to logs/incidents.txt
+
+Enter alert (or type 'exit'): 
+🚀 AI Incident Commander Started
+
+
+[Alert Agent] Processing input...
+
+[Analysis Agent] Finding root cause...
+[Analysis Parsed] {'root_cause': 'High CPU usage on the database server is likely causing connection timeout errors due to resource contention.', 'severity': 'HIGH', 'explanation': 'Persistent high CPU usage can lead to degraded performance and timeouts in database connections, affecting application availability and user experience.'}
+
+[Memory Agent] Checking history...
+⚠️ Repeated Incident Detected!
+
+[Decision Agent] Deciding action...
+[Decision Parsed] {'action_required': 'YES', 'recommended_action': 'Investigate and optimize database queries, consider scaling the database server or adding read replicas to reduce CPU load.', 'priority': 'HIGH', 'command': 'kubectl scale deployment <database-deployment-name> --replicas=<new-replica-count>'}
+
+[Response Agent] Taking action...
+
+===== 🚀 AI INCIDENT COMMANDER REPORT =====
+
+🔥 Severity       : HIGH
+🧠 Root Cause    : High CPU usage on the database server is likely causing connection timeout errors due to resource contention.
+📖 Explanation   : Persistent high CPU usage can lead to degraded performance and timeouts in database connections, affecting application availability and user experience.
+
+⚡ Action Needed : YES
+🛠️ Recommendation: Investigate and optimize database queries, consider scaling the database server or adding read replicas to reduce CPU load. | Immediate escalation required
+🚨 Priority      : CRITICAL
+
+💻 Suggested Command:
+kubectl scale deployment <database-deployment-name> --replicas=<new-replica-count>
+
+📝 Log saved to logs/incidents.txt
+
+Enter alert (or type 'exit'): 
